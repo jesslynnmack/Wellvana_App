@@ -7,35 +7,31 @@ const ContactForm = props => {
   }
 
   return (
-    <Form>
-      <h1>Contact Us</h1>
-      <FormGroup>
-        <Input type="name" name="name" id="formName" placeholder="Name" />
-      </FormGroup>
-      <FormGroup>
-        {/* <Label for="formEmail">Email</Label> */}
-        <Input type="email" name="email" id="formEmail" placeholder="Email" />
-      </FormGroup>
-      <FormGroup>
-        {/* <Label for="formSubject">Subject</Label> */}
-        <Input
-          type="subject"
-          name="subject"
-          id="formSubject"
-          placeholder="Subject"
+    <form
+      id="contact-form"
+      onSubmit={this.handleSubmit.bind(this)}
+      method="POST"
+    >
+      <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input type="text" className="form-control" />
+      </div>
+      <div className="form-group">
+        <label htmlFor="exampleInputEmail1">Email address</label>
+        <input
+          type="email"
+          className="form-control"
+          aria-describedby="emailHelp"
         />
-      </FormGroup>
-      <FormGroup>
-        {/* <Label for="formText">Text Area</Label> */}
-        <Input
-          type="textarea"
-          name="text"
-          id="formText"
-          placeholder="Message"
-        />
-      </FormGroup>
-      <Button onClick={handleClick}>Submit</Button>
-    </Form>
+      </div>
+      <div className="form-group">
+        <label htmlFor="message">Message</label>
+        <textarea className="form-control" rows="5"></textarea>
+      </div>
+      <button type="submit" className="btn btn-primary">
+        Submit
+      </button>
+    </form>
   );
 };
 

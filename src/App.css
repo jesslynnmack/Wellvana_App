@@ -10,13 +10,17 @@
 }
 
 .container-fluid img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 .contactUs {
   background-image: url("http://wellvana.com/wp-content/uploads/2019/09/Minimal-Background.png");
   padding: 15%;
+}
+
+.form-group label {
+  color: white;
 }
 
 .logo img {
@@ -28,7 +32,7 @@ p {
   color: white;
   font-style: bold;
 }
-h1 {
+h2 {
   color: white;
 }
 
