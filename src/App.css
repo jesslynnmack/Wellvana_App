@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.container-fluid {
+  height: 100%;
+  background-image: url("http://wellvana.com/wp-content/uploads/2019/09/Wellvana-Highlight-Background.jpg");
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.container-fluid img {
+  height: 100px;
+  width: 100px;
+}
+
+.contactUs {
+  background-image: url("http://wellvana.com/wp-content/uploads/2019/09/Minimal-Background.png");
+  padding: 15%;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+}
+
+p {
+  color: white;
+  font-style: bold;
+}
+h1 {
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
